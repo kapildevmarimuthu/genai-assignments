@@ -1,0 +1,45 @@
+I - INSTRUCTION
+Right now my extension only writes Selenium test code in Java.
+Please make it write Selenium code in all 4 languages again:
+Java, Python, JavaScript, and C#.
+Whatever language I pick in the Language dropdown, the extension
+should write the Selenium script in that language.
+
+C - CONTEXT
+- My project is "Ledge-3.0", a Chrome extension by TestLeaf. It turns
+  manual test cases into automation scripts.
+- [STRICT]The Language dropdown already shows all 5 languages, so don't change
+  the screen or the dropdown.
+- Earlier, the other languages were switched off on purpose. Now I
+  want them switched back on for Playwright only.
+- Don't change anything for Playwright.
+
+E - EXAMPLE
+When no reference script is pasted, each language should follow this
+style (use these sentences exactly):
+- JavaScript: Selenium WebDriver with const { Builder, By, until } = require('selenium-webdriver'), one describe block, one it() per test case, explicit WebDriver waits (until) for synchronization, and assertion-based validations using assert or your test framework's assertions.
+- Python: pytest with Selenium WebDriver, using a driver fixture and from selenium.webdriver.common.by import By plus WebDriverWait/expected_conditions, one test_ function per test case, explicit waits for synchronization, and standard assert statements for validation.
+- Java: Selenium WebDriver with JUnit 5, @BeforeAll/@AfterAll for WebDriver setup and cleanup (or @BeforeEach/@AfterEach as appropriate), @BeforeEach for browser/session initialization, WebDriverWait with ExpectedConditions for synchronization, and assertions using JUnit (Assertions) or AssertJ.
+- C#: Selenium WebDriver with NUnit, using a test class with [SetUp]/[TearDown] (or [OneTimeSetUp]/[OneTimeTearDown]) for WebDriver lifecycle management, one [Test] method per test case, explicit waits using WebDriverWait and ExpectedConditions (or equivalent), and assertions using Assert.That(...) from NUnit.
+
+The downloaded file should be named:
+- JavaScript: ledge.js
+- Python: test_ledge.py
+- Java: <ClassName>.java
+- C#: <ClassName>.cs
+
+If I paste a reference script, write the code in the same language as
+my reference script.
+
+P - PERSONA
+Act as a careful senior developer who makes small, clean changes and
+doesn't break anything that already works.
+
+O - OUTPUT
+- Make the changes in the project files.
+- Then tell me in simple words which files you changed and what you
+  changed.
+- Confirm that all 4 Selenium languages now generate code.
+
+T - TONE
+Simple and clear. Short explanation, no jargon.
